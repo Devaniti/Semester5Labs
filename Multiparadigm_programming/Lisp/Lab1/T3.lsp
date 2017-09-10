@@ -1,0 +1,5 @@
+(defun myfun2(X Y) (cond ((and (integerp (car X)) (> (car X) 0)) Y) (T (cons (car Y) (cdr X)))))
+(print (myfun2 '(1 2 3) '(4 5 6)))
+(print (myfun2 '(0.5 1.5 2.5) '(3.5 4.5 5.5)))
+(print (myfun2 '(-1 -2 -3) '(-4 -5 -6)))
+(print (myfun2 '(A B C) '(D E F)))

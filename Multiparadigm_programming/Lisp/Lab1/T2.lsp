@@ -1,0 +1,5 @@
+(setq L1 '(Y U I))
+(setq L2 '(G1 G2 G3))
+(setq L3 '(KK LL MM JJJ))
+(defun myfun() (list (second L1)(second L2) (third L3)))
+(print (myfun))

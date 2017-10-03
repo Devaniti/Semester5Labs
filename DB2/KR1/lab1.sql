@@ -29,11 +29,17 @@ GO
 
 CREATE PROCEDURE dbo.GetDirectorRents @Director varchar(40)
 AS
-SELECT COUNT(*) FROM Rent
+SELECT 
+CASE COUNT(*)
+WHEN 0 THEN 'No'
+ELSE 'Yes'
+END
+FROM Rent
 JOIN VHS ON Rent.VHS_ID = VHS.ID
 WHERE Director = @Director
 
 GO
+
 DROP PROCEDURE dbo.StudioCurrentRented
 GO
 

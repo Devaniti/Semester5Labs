@@ -1,0 +1,3 @@
+[submodule "MusicRecomendationService"]
+	path = MusicRecomendationService
+	url = https://github.com/ALEXKIRNAS/MusicRecommendationService.git

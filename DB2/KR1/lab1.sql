@@ -59,7 +59,12 @@ AS
 SELECT LastName,COUNT(Rent.ID) FROM Client
 JOIN Rent ON Rent.ClientID = Client.ID
 GROUP BY Client.ID, LastName
+HAVING COUNT(Rent.ID) = (
+SELECT TOP(1) COUNT(Rent.ID) FROM Client
+JOIN Rent ON Rent.ClientID = Client.ID
+GROUP BY Client.ID
 ORDER BY COUNT(Rent.ID) DESC
+)
 
 GO
 DROP PROCEDURE dbo.GetUnusedVHS

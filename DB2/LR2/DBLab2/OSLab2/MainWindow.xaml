@@ -1,0 +1,28 @@
+﻿<Window x:Class="OSLab2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OSLab2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="348.933" Width="552.24">
+    <Grid Margin="0,0,2,1" Initialized="Grid_Initialized">
+        <ListView x:Name="InfoBox" HorizontalAlignment="Left" Height="259" Margin="138,49,0,0" VerticalAlignment="Top" Width="399" AutomationProperties.Name="Box" SelectionChanged="ListView_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="DELETE" HorizontalAlignment="Left" Margin="13,156,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click" AutomationProperties.Name="asdasdasd"/>
+        <TextBox x:Name="NumInput" HorizontalAlignment="Left" Height="23" Margin="13,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged" AutomationProperties.Name="NumInput" Text="10000"/>
+        <Button Content="INSERT" HorizontalAlignment="Left" Margin="13,131,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click_1"/>
+        <Label x:Name="TimeLabel" Content="" HorizontalAlignment="Left" Margin="138,18,0,0" VerticalAlignment="Top"/>
+        <Button Content="JOIN W\ Index" HorizontalAlignment="Left" Margin="13,181,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click_2"/>
+        <Button Content="WHERE W\ Index" HorizontalAlignment="Left" Margin="13,206,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click_4"/>
+        <Label x:Name="CountLabel" Content="" HorizontalAlignment="Left" Margin="365,18,0,0" VerticalAlignment="Top"/>
+        <Button Content="JOIN W\O Index" HorizontalAlignment="Left" Margin="13,231,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click_3"/>
+        <Button Content="WHERE W\O Index" HorizontalAlignment="Left" Margin="13,256,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click_5"/>
+
+    </Grid>
+</Window>

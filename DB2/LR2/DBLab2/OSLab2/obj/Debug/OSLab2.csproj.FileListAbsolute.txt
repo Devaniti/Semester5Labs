@@ -1,0 +1,15 @@
+C:\Projects\OSLab2\OSLab2\obj\Debug\OSLab2.csprojResolveAssemblyReference.cache
+C:\Projects\OSLab2\OSLab2\obj\Debug\MainWindow.g.cs
+C:\Projects\OSLab2\OSLab2\obj\Debug\App.g.cs
+C:\Projects\OSLab2\OSLab2\obj\Debug\OSLab2_MarkupCompile.cache
+C:\Projects\OSLab2\OSLab2\obj\Debug\OSLab2_MarkupCompile.lref
+C:\Projects\OSLab2\OSLab2\bin\Debug\OSLab2.exe.config
+C:\Projects\OSLab2\OSLab2\bin\Debug\OSLab2.exe
+C:\Projects\OSLab2\OSLab2\bin\Debug\OSLab2.pdb
+C:\Projects\OSLab2\OSLab2\obj\Debug\MainWindow.baml
+C:\Projects\OSLab2\OSLab2\obj\Debug\OSLab2.g.resources
+C:\Projects\OSLab2\OSLab2\obj\Debug\OSLab2.Properties.Resources.resources
+C:\Projects\OSLab2\OSLab2\obj\Debug\OSLab2.csproj.GenerateResource.Cache
+C:\Projects\OSLab2\OSLab2\obj\Debug\OSLab2.csproj.CoreCompileInputs.cache
+C:\Projects\OSLab2\OSLab2\obj\Debug\OSLab2.exe
+C:\Projects\OSLab2\OSLab2\obj\Debug\OSLab2.pdb

@@ -131,7 +131,7 @@ namespace OSLab2
             var connection = new SqlConnection("Data Source=(local);Integrated Security=SSPI;");
             connection.Open();
             var StartTime = DateTime.Now;
-            var select = new SqlCommand($"USE LR2; SELECT Client.ID,FirstName,LastName,MiddleName,StartDate FROM Client WITH (INDEX(ID_Index)) JOIN Rent ON Rent.ClientID = Client.ID ORDER BY Client.ID DESC", connection);
+            var select = new SqlCommand($"USE LR2; SELECT Client.ID,FirstName,LastName,MiddleName,StartDate FROM Client WITH (INDEX(ID_Index)) JOIN Rent WITH (INDEX(Rent_Index)) ON Rent.ClientID = Client.ID WHERE Client.ID>2 ORDER BY Client.ID DESC", connection);
             var reader = select.ExecuteReader();
             TimeSpan diff = DateTime.Now - StartTime;
             TimeLabel.Content = $"completed in {diff.TotalSeconds} seconds";
@@ -186,7 +186,7 @@ namespace OSLab2
             var connection = new SqlConnection("Data Source=(local);Integrated Security=SSPI;");
             connection.Open();
             var StartTime = DateTime.Now;
-            var select = new SqlCommand($"USE LR2; SELECT Client.ID,FirstName,LastName,MiddleName,StartDate FROM Client WITH (INDEX(0)) JOIN Rent ON Rent.ClientID = Client.ID ORDER BY Client.ID DESC", connection);
+            var select = new SqlCommand($"USE LR2; SELECT Client.ID,FirstName,LastName,MiddleName,StartDate FROM Client WITH (INDEX(0)) JOIN Rent  WITH (INDEX(0)) ON Rent.ClientID = Client.ID WHERE Client.ID>2 ORDER BY Client.ID DESC", connection);
             var reader = select.ExecuteReader();
             TimeSpan diff = DateTime.Now - StartTime;
             TimeLabel.Content = $"completed in {diff.TotalSeconds} seconds";

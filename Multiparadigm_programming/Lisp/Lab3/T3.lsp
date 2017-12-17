@@ -1,26 +1,37 @@
-(defun ins(A B)
-	(cond
-		((null B) (list A))
-		((> A (car B)) (cons (car B) (ins A (cdr B))))
-		(T (cons A (ins (car B) (cdr B))))
+(defun rev1(A)
+	(
+		(lambda (A)
+			(cond 
+				((atom A) A)
+				(T (append (rev1 (cdr A)) (list (car A))))
+			)
+		) A
 	)
+)
+(defun V1(A) 
+	(cond 
+		((atom A) A)
+		(T (append (rev1 A) (V1 (cdr A))))
+	)
+)
+(print 
+	(V1 '(1 2 3 4 5 6))
 )
 
-(defun checksort(A)
-	(cond
-		((null (cdr A)) T)
-		((> (car A) (cadr A)) nil)
-		(T (checksort (cdr A)))
+(defun rev2(A)
+	(let ((B A))
+		(cond 
+			((atom B) B)
+			(T (append (rev2 (cdr B)) (list (car B))))
+		)
 	)
 )
-
-(defun T3(A)
-	(cond
-		((checksort A) A)
-		(T (T3 (ins (car A) (cdr A))))
+(defun V2(A) 
+	(cond 
+		((atom A) A)
+		(T (append (rev2 A) (V2 (cdr A))))
 	)
 )
- 
-(print
-	(T3 '(1 9 2 7 4 3 0))
+(print 
+	(V2 '(1 2 3 4 5 6))
 )

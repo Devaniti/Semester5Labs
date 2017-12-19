@@ -76,6 +76,7 @@ SELECT * FROM
 ) AS Original
 PIVOT
 (
+	SUM([VHS Rents]),
 	AVG([VHS Rents])
 	FOR Director 
 	IN ([Martin Scorsese],[Alfred Hitchcock],[Steven Spielberg],[Roman Polanski])

@@ -1,26 +1,44 @@
-(defun ins(A B)
+(defun isIn(A B)
 	(cond
-		((null B) (list A))
-		((> A (car B)) (cons (car B) (ins A (cdr B))))
-		(T (cons A (ins (car B) (cdr B))))
+		((null B) nil)
+		((equal A (car B)) T)
+		(T (isIn A (cdr B)))
 	)
 )
 
-(defun checksort(A)
-	(cond
-		((null (cdr A)) T)
-		((> (car A) (cadr A)) nil)
-		(T (checksort (cdr A)))
+(defun isVowel(A)
+	(isIn A '(#\a #\e #\o #\u #\i #\y #\A #\E #\O #\U #\I #\Y))
+)
+
+(defun divideByChar(A)
+	(cond 
+		((equal A "") nil)
+		(T (cons (char A 0) (divideByChar (subseq A 1))))
 	)
 )
 
-(defun T3(A)
+(defun splitSyllables(A B)
 	(cond
-		((checksort A) A)
-		(T (T3 (ins (car A) (cdr A))))
+		((null A) "")
+		((equal (car A) #\space) (concatenate 'string " " (splitSyllables (cdr A) T)))
+		(B 
+			(concatenate 'string 
+				(make-string 1 :initial-element (car A)) 
+				(splitSyllables (cdr A) (not (isVowel (car A))))
+			)
+		)
+		((isVowel (car A)) 
+			(concatenate 'string "_" (make-string 1 :initial-element (car A)) (splitSyllables (cdr A) nil))
+		)
+		(T 
+			(concatenate 'string (make-string 1 :initial-element (car A)) (splitSyllables (cdr A) nil))
+		)
 	)
 )
- 
-(print
-	(T3 '(1 9 2 7 4 3 0))
+
+(defun T7(A)
+	(splitSyllables (divideByChar A) T)
 )
+
+
+(print (T7 "Word one bublegum"))

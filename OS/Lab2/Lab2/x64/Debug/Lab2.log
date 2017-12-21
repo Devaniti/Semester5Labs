@@ -1,0 +1,21 @@
+﻿  Utils.cpp
+c:\projects\semester5labs\os\lab2\lab2\utils.cpp(19): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\projects\semester5labs\os\lab2\lab2\utils.cpp(20): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\projects\semester5labs\os\lab2\lab2\utils.cpp(27): warning C4018: '<': signed/unsigned mismatch
+c:\projects\semester5labs\os\lab2\lab2\utils.cpp(33): warning C4018: '<': signed/unsigned mismatch
+c:\projects\semester5labs\os\lab2\lab2\utils.cpp(41): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\projects\semester5labs\os\lab2\lab2\utils.cpp(42): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\projects\semester5labs\os\lab2\lab2\utils.cpp(67): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\projects\semester5labs\os\lab2\lab2\utils.cpp(80): warning C4018: '<': signed/unsigned mismatch
+c:\projects\semester5labs\os\lab2\lab2\utils.cpp(91): warning C4018: '<': signed/unsigned mismatch
+c:\projects\semester5labs\os\lab2\lab2\utils.cpp(92): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\projects\semester5labs\os\lab2\lab2\utils.cpp(103): warning C4018: '<': signed/unsigned mismatch
+c:\projects\semester5labs\os\lab2\lab2\utils.cpp(107): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\projects\semester5labs\os\lab2\lab2\utils.cpp(109): warning C4018: '<': signed/unsigned mismatch
+c:\projects\semester5labs\os\lab2\lab2\utils.cpp(118): warning C4018: '<': signed/unsigned mismatch
+c:\projects\semester5labs\os\lab2\lab2\utils.cpp(128): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+c:\projects\semester5labs\os\lab2\lab2\utils.cpp(130): warning C4018: '<': signed/unsigned mismatch
+c:\projects\semester5labs\os\lab2\lab2\utils.cpp(134): warning C4018: '<': signed/unsigned mismatch
+c:\projects\semester5labs\os\lab2\lab2\utils.cpp(135): warning C4018: '<': signed/unsigned mismatch
+  Lab2.vcxproj -> C:\Projects\Semester5Labs\OS\Lab2\x64\Debug\Lab_02.exe
+  Lab2.vcxproj -> C:\Projects\Semester5Labs\OS\Lab2\x64\Debug\Lab_02.pdb (Full PDB)

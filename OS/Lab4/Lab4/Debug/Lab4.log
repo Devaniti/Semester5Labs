@@ -1,4 +1,12 @@
 ﻿  Lab4.cpp
-c:\projects\semester5labs\os\lab4\lab4\lab4.cpp(63): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+c:\projects\semester5labs\os\lab4\lab4\lab4.cpp(48): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+c:\projects\semester5labs\os\lab4\lab4\lab4.cpp(79): warning C4018: '<': signed/unsigned mismatch
+c:\projects\semester5labs\os\lab4\lab4\lab4.cpp(86): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+c:\projects\semester5labs\os\lab4\lab4\lab4.cpp(284): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+c:\projects\semester5labs\os\lab4\lab4\lab4.cpp(345): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+c:\projects\semester5labs\os\lab4\lab4\lab4.cpp(365): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+c:\projects\semester5labs\os\lab4\lab4\lab4.cpp(408): warning C4018: '<': signed/unsigned mismatch
   Lab4.vcxproj -> C:\Projects\Semester5Labs\OS\Lab4\Lab4\Debug\Lab4.exe
   Lab4.vcxproj -> C:\Projects\Semester5Labs\OS\Lab4\Lab4\Debug\Lab4.pdb (Full PDB)
